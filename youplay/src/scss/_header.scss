@@ -1,0 +1,134 @@
+.header {
+  background-color: #201b3a;
+  opacity: 0.8;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  .container {
+    width: 75%;
+    margin: 0 auto;
+    .navBar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .leftside {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .logo {
+          width: 160px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .navList {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          color: #fff;
+          text-transform: uppercase;
+
+          font-size: 13px;
+          .firstItem {
+            position: relative;
+            cursor: pointer;
+            &:hover {
+              .dropDown {
+                display: flex;
+              }
+            }
+            .dropDown {
+              display: none;
+              flex-direction: column;
+              gap: 25px;
+              padding: 25px;
+              width: 150px;
+              left: 0;
+              top: 65px;
+              position: absolute;
+              background-color: #07021f;
+              .dropItem {
+                cursor: pointer;
+              }
+            }
+            .dropItem:nth-child(5) {
+              border-bottom: 2px solid white;
+              padding-bottom: 10px;
+            }
+          }
+          .navItem {
+            padding: 25px 0;
+            cursor: pointer;
+          }
+        }
+        .navItem:nth-child(2) {
+          position: relative;
+          &:hover {
+            .dropDownShop {
+              display: flex;
+              gap: 40px;
+            }
+          }
+          .dropDownShop {
+            width: 350px;
+            display: none;
+            gap: 25px;
+            padding: 25px;
+            left: 0;
+            top: 65px;
+            position: absolute;
+            background-color: #07021f;
+            transform: translateY(1.5);
+            .shopDropLeft {
+              width: 50%;
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              a {
+                color: #fff;
+                padding-bottom: 10px;
+                &:hover{
+                  border-bottom: 1px solid #fff;
+
+                }
+              }
+            }
+          }
+          .shopDropRight {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            a {
+              color: #fff;
+              padding-bottom: 8px;
+              &:hover{
+                border-bottom: 1px solid #fff;
+
+              }
+            }
+          }
+        }
+      }
+      .rightSide {
+        display: flex;
+        align-items: center;
+        .rightlist {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          color: #fff;
+          .righItem {
+            .fa-caret-down {
+              margin-left: 3px;
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

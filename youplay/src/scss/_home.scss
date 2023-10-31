@@ -1,0 +1,82 @@
+.home {
+  width: 100%;
+  background-color: #201b3a;
+  .container {
+    width: 93%;
+    margin: 0 auto;
+    background-image: url(../images/banner-bg.jpg);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #140557;
+      position: absolute;
+      opacity: 0.5;
+    }
+    .homeContent {
+      width: 80.5%;
+      height: 550px;
+      margin: 0 auto;
+      display: flex;
+      padding: 100px 0;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: 33px;
+
+      .homeTop {
+        z-index: 10;
+        .mainTitle {
+          font-size: 50px;
+          color: #fff;
+          line-height: 55px;
+          font-weight: 500;
+        }
+      }
+      .homeMiddle {
+        z-index: 10;
+        .homeInfo {
+          width: 600px;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+      .homeBtns {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .demoBtn {
+          color: #fff;
+          padding: 15px 40px;
+          background-color: #d92b4c;
+          transform: skew(-10deg);
+          transform-origin: bottom left;
+          i {
+            margin-right: 5px;
+            color: #fff;
+          }
+        }
+        .purchaseBtn {
+          background-color: transparent;
+          color: #fff;
+          border: 3px solid #fff;
+          padding: 13px 40px;
+          transform: skew(-10deg);
+          transform-origin: bottom left;
+          i {
+            margin-right: 5px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

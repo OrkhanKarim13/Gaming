@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Metrophobic&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab&family=Roboto:wght@100;300;400;500&family=Source+Sans+3:ital,wght@1,700&display=swap");
+.header {
+  background-color: #201b3a;
+  opacity: 0.8;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.header .container {
+  width: 75%;
+  margin: 0 auto;
+}
+.header .container .navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .navBar .leftside {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header .container .navBar .leftside .logo {
+  width: 160px;
+}
+.header .container .navBar .leftside .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .container .navBar .leftside .navList {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.header .container .navBar .leftside .navList .firstItem {
+  position: relative;
+  cursor: pointer;
+}
+.header .container .navBar .leftside .navList .firstItem:hover .dropDown {
+  display: flex;
+}
+.header .container .navBar .leftside .navList .firstItem .dropDown {
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  width: 150px;
+  left: 0;
+  top: 65px;
+  position: absolute;
+  background-color: #07021f;
+}
+.header .container .navBar .leftside .navList .firstItem .dropDown .dropItem {
+  cursor: pointer;
+}
+.header .container .navBar .leftside .navList .firstItem .dropItem:nth-child(5) {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+.header .container .navBar .leftside .navList .navItem {
+  padding: 25px 0;
+  cursor: pointer;
+}
+.header .container .navBar .leftside .navItem:nth-child(2) {
+  position: relative;
+}
+.header .container .navBar .leftside .navItem:nth-child(2):hover .dropDownShop {
+  display: flex;
+  gap: 40px;
+}
+.header .container .navBar .leftside .navItem:nth-child(2) .dropDownShop {
+  width: 350px;
+  display: none;
+  gap: 25px;
+  padding: 25px;
+  left: 0;
+  top: 65px;
+  position: absolute;
+  background-color: #07021f;
+  transform: translateY(1.5);
+}
+.header .container .navBar .leftside .navItem:nth-child(2) .dropDownShop .shopDropLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.header .container .navBar .leftside .navItem:nth-child(2) .dropDownShop .shopDropLeft a {
+  color: #fff;
+  padding-bottom: 10px;
+}
+.header .container .navBar .leftside .navItem:nth-child(2) .dropDownShop .shopDropLeft a:hover {
+  border-bottom: 1px solid #fff;
+}
+.header .container .navBar .leftside .navItem:nth-child(2) .shopDropRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.header .container .navBar .leftside .navItem:nth-child(2) .shopDropRight a {
+  color: #fff;
+  padding-bottom: 8px;
+}
+.header .container .navBar .leftside .navItem:nth-child(2) .shopDropRight a:hover {
+  border-bottom: 1px solid #fff;
+}
+.header .container .navBar .rightSide {
+  display: flex;
+  align-items: center;
+}
+.header .container .navBar .rightSide .rightlist {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+}
+.header .container .navBar .rightSide .rightlist .righItem .fa-caret-down {
+  margin-left: 3px;
+  font-size: 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #201b3a;
+}
+
+.home {
+  width: 100%;
+  background-color: #201b3a;
+}
+.home .container {
+  width: 93%;
+  margin: 0 auto;
+  background-image: url(../images/banner-bg.jpg);
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home .container::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140557;
+  position: absolute;
+  opacity: 0.5;
+}
+.home .container .homeContent {
+  width: 80.5%;
+  height: 550px;
+  margin: 0 auto;
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 33px;
+}
+.home .container .homeContent .homeTop {
+  z-index: 10;
+}
+.home .container .homeContent .homeTop .mainTitle {
+  font-size: 50px;
+  color: #fff;
+  line-height: 55px;
+  font-weight: 500;
+}
+.home .container .homeContent .homeMiddle {
+  z-index: 10;
+}
+.home .container .homeContent .homeMiddle .homeInfo {
+  width: 600px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.home .container .homeContent .homeBtns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.home .container .homeContent .homeBtns .demoBtn {
+  color: #fff;
+  padding: 15px 40px;
+  background-color: #d92b4c;
+  transform: skew(-10deg);
+  transform-origin: bottom left;
+}
+.home .container .homeContent .homeBtns .demoBtn i {
+  margin-right: 5px;
+  color: #fff;
+}
+.home .container .homeContent .homeBtns .purchaseBtn {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 13px 40px;
+  transform: skew(-10deg);
+  transform-origin: bottom left;
+}
+.home .container .homeContent .homeBtns .purchaseBtn i {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.shop {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/dw4___demonlord_by_sandara-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.shop .shopContent {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+}
+.shop .shopContent .shopTitle {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 28px;
+}
+.shop .shopContent a {
+  padding: 15px 70px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transform: skew(-10deg);
+  transform-origin: bottom left;
+  font-size: 24px;
+  color: #fff;
+}
+
+.timeRounder {
+  font-family: Arial, sans-serif;
+  background-image: url("../images/banner-witcher-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+.timeRounder::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140557;
+  position: absolute;
+  opacity: 0.5;
+}
+.timeRounder .countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+.timeRounder .countdown .countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+.timeRounder .countdown .countdown-item span {
+  margin-top: 5px;
+}/*# sourceMappingURL=style.css.map */
